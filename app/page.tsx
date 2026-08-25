@@ -52,7 +52,7 @@ export default function Home(){
   const [mode,setMode]=useState<"client"|"admin">("client");
   const [theme,setTheme]=useState<ThemeKey>("padrao2");
   const [catalogProducts,setCatalogProducts]=useState<Product[]>(products);
-  const [blurMode,setBlurMode]=useState<BlurMode>("logo");
+  const [blurMode,setBlurMode]=useState<BlurMode>("none");
   const [inactiveIds,setInactiveIds]=useState<Set<number>>(()=>new Set([5]));
   const [lastUnitsIds,setLastUnitsIds]=useState<Set<number>>(()=>new Set([3]));
   const [promoIds,setPromoIds]=useState<Set<number>>(()=>new Set([4]));
