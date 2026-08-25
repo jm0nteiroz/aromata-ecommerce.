@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Arômata — Essências que transformam momentos",
   description: "Velas, difusores e aromas para transformar ambientes em memórias.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL("https://aromata-mvp.chatgptdoscrias.chatgpt.site"),
   openGraph: {
     title: "ARÔMATA — Essências que transformam momentos.",
     description: "Velas, difusores e aromas para transformar ambientes em memórias.",
