@@ -50,7 +50,7 @@ function AutoVideo({src,label,className=""}:{src:string;label:string;className?:
 
 export default function Home(){
   const [mode,setMode]=useState<"client"|"admin">("client");
-  const [theme,setTheme]=useState<ThemeKey>("padrao1");
+  const [theme,setTheme]=useState<ThemeKey>("padrao2");
   const [catalogProducts,setCatalogProducts]=useState<Product[]>(products);
   const [blurMode,setBlurMode]=useState<BlurMode>("logo");
   const [inactiveIds,setInactiveIds]=useState<Set<number>>(()=>new Set([5]));
