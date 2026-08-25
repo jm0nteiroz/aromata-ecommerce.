@@ -94,3 +94,15 @@
   .hero-logo.logo-blur{padding:20px 24px 18px}
   .hero-logo small{font-size:6px;letter-spacing:.34em;margin-top:13px}
 }
+
+/* Contraste da assinatura sobre campanhas claras */
+.hero-logo.dark{color:#481343}
+.hero-logo.dark span{
+  -webkit-text-stroke:.3px rgba(255,250,247,.7);
+  text-shadow:0 1px 0 rgba(255,255,255,.72),0 3px 22px rgba(255,250,247,.72),0 12px 42px rgba(36,8,31,.16);
+}
+.hero-logo.dark small{
+  color:#54174f;
+  font-weight:700;
+  text-shadow:0 1px 8px rgba(255,255,255,.95),0 0 18px rgba(255,255,255,.9);
+}
