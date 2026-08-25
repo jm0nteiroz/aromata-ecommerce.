@@ -58,3 +58,39 @@
 .catalog-head{align-items:start}.catalog-filters{display:grid;gap:10px;justify-items:end;max-width:760px}.collection-filters,.catalog-filters .filters{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:wrap}.collection-filters>span,.catalog-filters .filters>span{font-size:8px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-right:4px}.collection-filters button{border:1px solid color-mix(in srgb,var(--accent) 34%,var(--line));background:var(--paper);padding:10px 15px;color:var(--accent-deep);font-size:9px;text-transform:uppercase;letter-spacing:.09em;cursor:pointer}.collection-filters button.active{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}.catalog-context{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:17px 0 20px;margin-top:-18px}.catalog-context b{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--accent-deep)}.catalog-context span{font-size:9px;color:var(--muted)}.collection-tag{position:absolute;right:14px;top:14px;background:rgba(35,26,31,.78);backdrop-filter:blur(8px);color:#fff;padding:7px 10px;font-size:7px;text-transform:uppercase;letter-spacing:.13em}.product-image-button .badge+.collection-tag{top:48px}.product-toolbar .admin-collection-filter{display:flex;gap:8px}.admin-collection-filter select{border:1px solid #d8cecb;background:#fff;padding:0 14px;font-size:9px;color:#6c5e65;text-transform:uppercase}.collection-products .list-head,.collection-products .list-row{grid-template-columns:2.05fr .9fr .68fr 1fr 1.2fr}.collection-pill{justify-self:start;border-radius:999px;padding:7px 10px;background:#eee6eb;color:#6f5264;font-size:8px;text-transform:uppercase;letter-spacing:.08em}.cp-maes{background:#f7e2e7;color:#8a3e56}.cp-namorados{background:#f1dce1;color:#7a263e}.cp-natal{background:#e2ebe2;color:#31553a}.collection-field{grid-column:1/-1}.collection-field small{display:block;margin-top:6px;color:#917f88;text-transform:none;letter-spacing:0;font-size:8px}
 @media(max-width:900px){.catalog-head{gap:28px}.catalog-filters{justify-items:start}.collection-filters,.catalog-filters .filters{justify-content:flex-start}.catalog-context{margin-top:0}}
 @media(max-width:780px){.catalog-filters{width:100%}.collection-filters,.catalog-filters .filters{overflow-x:auto;flex-wrap:nowrap;width:100%;padding-bottom:4px}.collection-filters button,.catalog-filters .filters button{white-space:nowrap}.collection-filters>span,.catalog-filters .filters>span{position:sticky;left:0;background:var(--cream);z-index:2;padding-right:8px}.catalog-context{align-items:flex-start;gap:5px;flex-direction:column}.product-toolbar{flex-direction:column}.product-toolbar .admin-collection-filter{width:100%}.admin-collection-filter select{flex:1}.collection-products .list-head,.collection-products .list-row{min-width:930px}}
+
+/* Assinatura do hero: presença de marca sem encobrir o filme */
+.hero-logo{
+  top:42%;
+  width:max-content;
+  max-width:calc(100vw - 80px);
+  padding:22px 34px 20px;
+}
+.hero-logo span{
+  font-size:clamp(54px,6.35vw,104px);
+  letter-spacing:.075em;
+}
+.hero-logo small{
+  margin-top:16px;
+  font-size:7px;
+  letter-spacing:.48em;
+}
+.hero-logo.logo-blur{
+  padding:25px 44px 23px;
+  background:linear-gradient(105deg,rgba(255,255,255,.08),rgba(255,255,255,.17),rgba(255,255,255,.07));
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:2px;
+  box-shadow:0 24px 70px rgba(15,8,12,.14);
+  backdrop-filter:blur(16px) saturate(1.08);
+}
+.hero-logo.logo-blur.dark{
+  background:linear-gradient(105deg,rgba(255,250,247,.16),rgba(255,250,247,.28),rgba(255,250,247,.14));
+  border-color:rgba(91,31,87,.14);
+}
+.blur-video .hero-logo.light{padding-inline:44px}
+@media(max-width:780px){
+  .hero-logo{top:39%;max-width:calc(100vw - 36px);padding-inline:18px}
+  .hero-logo span{font-size:clamp(46px,12vw,72px)}
+  .hero-logo.logo-blur{padding:20px 24px 18px}
+  .hero-logo small{font-size:6px;letter-spacing:.34em;margin-top:13px}
+}
