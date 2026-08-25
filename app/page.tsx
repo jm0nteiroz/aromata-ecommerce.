@@ -17,7 +17,7 @@ const themes: Record<ThemeKey, {label:string; eyebrow:string; title:string; text
 
 const campaigns: Record<ThemeKey, {video:string; tone:"light"|"dark"; season:string; year:string; alt?:string}> = {
   padrao1:{video:"/videos/padrao1.mp4",tone:"light",season:"Padrão 1",year:"Permanente"},
-  padrao2:{video:"/videos/padrao2.mp4",tone:"dark",season:"Padrão 2",year:"Permanente"},
+  padrao2:{video:"/videos/padrao2.mp4",tone:"light",season:"Padrão 2",year:"Permanente"},
   maes:{video:"/videos/maes1.mp4",tone:"dark",season:"Especial Dia das Mães",year:"2026"},
   namorados:{video:"/videos/namorados2.mp4",tone:"light",season:"Dia dos Namorados",year:"2026"},
   natal:{video:"/videos/natal1.mp4",tone:"light",season:"Natal Arômata",year:"2025"},
